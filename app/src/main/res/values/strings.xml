@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency Conversion</string>
+    <string name="title">USD Coverter</string>
+    <string name="hint">USD to Convert</string>
+    <string name="choice1">Euros</string>
+    <string name="choice2">Mexican Pesos</string>
+    <string name="choice3">Canadian Dollars</string>
+    <string name="button">Convert</string>
+
+</resources>

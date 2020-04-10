@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="239dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/moneyInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/moneyInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/conversionOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <RadioGroup
+        android:id="@+id/conversionOptions"
+        android:layout_width="205dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConvert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyInput">
+
+        <RadioButton
+            android:id="@+id/euroRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choice1"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/mexRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choice2"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/canRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choice3"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="270dp"
+        android:layout_height="88dp"
+        android:text="@string/button"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/outputDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversionOptions" />
+
+    <TextView
+        android:id="@+id/outputDisplay"
+        android:layout_width="259dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
+</androidx.constraintlayout.widget.ConstraintLayout>
